@@ -155,7 +155,7 @@
   pagebreak(weak: true)
 
   set page(
-    numbering: "— 1 —",
+    numbering: "— 1 / 1 —",
   )
 
   doc
