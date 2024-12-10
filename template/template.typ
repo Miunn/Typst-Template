@@ -95,15 +95,6 @@
   )
 
   show link: underline
-  
-  show ref: it => {
-    let el = it.element
-    if el != none and el.func() == heading {
-      [#counter(heading).display() #el.body]
-    } else {
-      it
-    }
-  }
 
   show outline.entry: it => {
     if it.at("label", default: none) == <custom-entry> {
