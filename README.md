@@ -13,6 +13,7 @@ conf(
   date: auto,
   imagePath: "no-image.png",
   imageSpacing: 0.5cm,
+  imageAlignment: center,
   professor: none,
   semester: none,
   pageTitle: [],
@@ -32,6 +33,7 @@ conf(
 - `date` (date): Date used in document's metadata (default: auto (compilation date))
 - `imagePath` (string): Path to cover image (default: "no-image.png")
 - `imageSpacing` (measurement): Spacing to set in cover page between title and cover image (default: 0.5cm)
+- `imageAlignment` (alignment): Alignment to use for cover image (default: center)
 - `professor` (string): Optionnal, Professor name displayed in cover footer (default: none)
 - `semester` (number): Semester number displayed in cover footer (default: none)
 - `pageTitle` (content): Title displayed in page's header (default: [])
