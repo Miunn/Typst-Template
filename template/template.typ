@@ -5,6 +5,7 @@
   imagePath: "no-image.png",
   imageSpacing: 0.5cm,
   imageWidth: 100%,
+  imageAlignment: center,
   professor: none,
   semester: none,
 ) = {
@@ -62,7 +63,7 @@
 
   v(imageSpacing)
 
-  image(imagePath, width: imageWidth)
+  align(center, image(imagePath, width: imageWidth))
 }
 
 #let conf(
@@ -72,8 +73,9 @@
   keywords: (),
   date: auto,
   imagePath: "no-image.png",
+  imageAlignment: center,
   imageSpacing: 0.5cm,
-  imageWidth: 100%,
+  imageWidth: 80%,
   professor: none,
   semester: none,
   pageTitle: [],
@@ -136,6 +138,7 @@
     imageSpacing: imageSpacing,
     imagePath: imagePath,
     imageWidth: imageWidth,
+    imageAlignment: imageAlignment,
     professor: professor,
     semester: semester,
   )
