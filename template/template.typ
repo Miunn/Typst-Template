@@ -71,6 +71,7 @@
   professor: none,
   semester: none,
   pageTitle: [],
+  displayOutline: true,
   outlineTitle: [Table des matières],
   displayBibliography: true,
   bibliographyTitle: [Bibliographie],
@@ -143,11 +144,13 @@
     ],
   )
 
-  outline(
-    title: outlineTitle,
-    depth: 2,
-    indent: true
-  )
+  if displayOutline {
+    outline(
+      title: outlineTitle,
+      depth: 2,
+      indent: true
+    )
+  }
 
   pagebreak(weak: true)
 
