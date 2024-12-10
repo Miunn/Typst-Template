@@ -74,6 +74,7 @@
   outlineTitle: [Table des matières],
   displayBibliography: true,
   bibliographyTitle: [Bibliographie],
+  fullBibliography: false,
   doc,
 ) = {
   set document(
@@ -159,6 +160,6 @@
   pagebreak(weak: true)
 
   if displayBibliography {
-    bibliography("../bib.yaml", title: bibliographyTitle, style: "the-institution-of-engineering-and-technology")
+    bibliography("../bib.yaml", title: bibliographyTitle, style: "the-institution-of-engineering-and-technology", full: fullBibliography)
   }
 }
