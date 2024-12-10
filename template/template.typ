@@ -171,3 +171,23 @@
     bibliography("../bib.yaml", title: bibliographyTitle, style: "the-institution-of-engineering-and-technology", full: fullBibliography)
   }
 }
+
+#let rectFig(
+  content,
+  caption: none,
+  placement: none,
+  kind: figure,
+  supplement: "Figure",
+  numbering: "1",
+  gap: 0.65em,
+  outlined: true,
+) = figure(
+  rect(content),
+  caption: caption,
+  placement: placement,
+  kind: kind,
+  supplement: supplement,
+  numbering: numbering,
+  gap: gap,
+  outlined: outlined,
+)
