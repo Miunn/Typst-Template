@@ -4,6 +4,7 @@
   authors: (),
   imagePath: "no-image.png",
   imageSpacing: 0.5cm,
+  imageWidth: 100%,
   professor: none,
   semester: none,
 ) = {
@@ -61,7 +62,7 @@
 
   v(imageSpacing)
 
-  image(imagePath)
+  image(imagePath, width: imageWidth)
 }
 
 #let conf(
@@ -72,6 +73,7 @@
   date: auto,
   imagePath: "no-image.png",
   imageSpacing: 0.5cm,
+  imageWidth: 100%,
   professor: none,
   semester: none,
   pageTitle: [],
@@ -133,6 +135,7 @@
     authors: authors,
     imageSpacing: imageSpacing,
     imagePath: imagePath,
+    imageWidth: imageWidth,
     professor: professor,
     semester: semester,
   )
