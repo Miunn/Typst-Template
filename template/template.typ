@@ -3,6 +3,7 @@
   subTitle: [Subtitle],
   authors: (),
   imagePath: "no-image.png",
+  imageSpacing: 0.5cm,
   professor: none,
   semester: none,
 ) = {
@@ -58,6 +59,8 @@
 
   line()
 
+  v(imageSpacing)
+
   image(imagePath)
 }
 
@@ -68,6 +71,7 @@
   keywords: (),
   date: auto,
   imagePath: "no-image.png",
+  imageSpacing: 0.5cm,
   professor: none,
   semester: none,
   pageTitle: [],
@@ -127,6 +131,7 @@
     title: title,
     subTitle: subTitle,
     authors: authors,
+    imageSpacing: imageSpacing,
     imagePath: imagePath,
     professor: professor,
     semester: semester,
