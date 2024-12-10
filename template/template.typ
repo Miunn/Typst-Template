@@ -72,6 +72,7 @@
   semester: none,
   pageTitle: [],
   outlineTitle: [Table des matières],
+  displayBibliography: true,
   bibliographyTitle: [Bibliographie],
   doc,
 ) = {
@@ -157,5 +158,7 @@
 
   pagebreak(weak: true)
 
-  bibliography("../bib.yaml", title: bibliographyTitle, style: "the-institution-of-engineering-and-technology")
+  if displayBibliography {
+    bibliography("../bib.yaml", title: bibliographyTitle, style: "the-institution-of-engineering-and-technology")
+  }
 }
